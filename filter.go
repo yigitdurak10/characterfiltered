@@ -6,7 +6,7 @@ import (
 
 func cencored(s string) any {
 	sum := 0
-	cencoredList := "şçğüöim"
+	cencoredList := "@#&%*"
 	for i := 0; i <= len(s)-1; i++ {
 		for x := 0; x <= len(cencoredList)-1; x++ {
 			if string(cencoredList[x]) == string(s[i]) {
@@ -25,5 +25,5 @@ func cencored(s string) any {
 }
 
 func main() {
-	cencored("kaola")
+	cencored("kyd")
 }
